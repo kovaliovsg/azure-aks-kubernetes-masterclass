@@ -36,10 +36,8 @@
 - Go to https://shell.azure.com
 ```
 # Template
+az account set --subscription aeca5e5d-1685-4226-9e2a-2318804cc357
 az aks get-credentials --resource-group aks --name aks-test
-
-# Replace Resource Group & Cluster Name
-az aks get-credentials --resource-group aks-rg1 --name aksdemo1
 
 # List Kubernetes Worker Nodes
 kubectl get nodes 
